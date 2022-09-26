@@ -29,13 +29,13 @@ public static int sumOfLeaf(Node root)
 }
 
 
-Sample Input:
-2
-3
-10 8 34
-2
-48 36
+// Sample Input:
+// 2
+// 3
+// 10 8 34
+// 2
+// 48 36
 
-Sample Output:
-42
-36
+// Sample Output:
+// 42
+// 36
