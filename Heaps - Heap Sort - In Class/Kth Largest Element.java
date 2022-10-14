@@ -40,7 +40,98 @@
 // Insert 1. Array = {4, 5, 6, 1} 2nd largest element = 5
 // Insert 2. Array = {4, 5, 6, 1, 2} 2nd largest element = 5
 // Insert 3. Array = {4, 5, 6, 1, 2, 3} 2nd largest element = 5
+----------------------
 
+import java.io.*; // for handling input/output
+import java.util.*; // contains Collections framework
+
+class Main {
+    public static void main (String[] args) {
+                      // Your code here
+        FastReader sc = new FastReader();
+        int n = sc.nextInt(); 
+        int k = sc.nextInt(); 
+        ArrayList<Integer> List = new ArrayList<Integer>();
+        for(int i = 0; i < n; i++)
+        {
+            int num = sc.nextInt();
+            List.add(num); 
+        }
+        ArrayList<Integer> List2 = new ArrayList<Integer>();
+        for(int i = 0; i < n; i++)
+        {
+            int num2 = sc.nextInt();
+            List2.add(num2); 
+        }
+        for(int i = 0; i < n; i++)
+        {
+            int large = kThLargestElement(List, List2, i, k);
+            System.out.print(large + " ");
+        }
+    }
+
+    public static int kThLargestElement(ArrayList<Integer> List, ArrayList<Integer> List2, int a, int k)
+    {
+        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
+        // PriorityQueue<Integer> pq = new PriorityQueue<>((x,y)->Integer.compare(y,x));     // we can also use this
+        List.add(List2.get(a));
+        for(int i = 0; i < List.size(); i++)
+        {
+            pq.add(List.get(i));
+        }
+        for(int i = 1; i < k; i++)
+        {
+            pq.poll();
+        }
+        return pq.peek();
+    }
+    
+    static class FastReader {
+        BufferedReader br;
+        StringTokenizer st;
+
+        public FastReader()
+        {
+            br = new BufferedReader(new InputStreamReader(System.in));
+        }
+        String next()
+        {
+            while (st == null || !st.hasMoreElements()) {
+                try {
+                    st = new StringTokenizer(br.readLine());
+                }
+                catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            return st.nextToken();
+        }
+
+        int nextInt() { return Integer.parseInt(next()); }
+        long nextLong() { return Long.parseLong(next()); }
+        double nextDouble() { return Double.parseDouble(next()); }
+
+        String nextLine()
+        {
+            String str = "";
+            try {
+                if(st.hasMoreTokens()){
+                    str = st.nextToken("\n");
+                }
+                else{
+                    str = br.readLine();
+                }
+            }
+            catch (IOException e) {
+                e.printStackTrace();
+            }
+            return str;
+        }
+    }
+}
+    
+----------------------
+//2nd Solution
 import java.io.*; // for handling input/output
 import java.util.*; // contains Collections framework
 
