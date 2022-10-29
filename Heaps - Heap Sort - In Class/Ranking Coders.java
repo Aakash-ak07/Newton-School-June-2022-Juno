@@ -76,3 +76,51 @@ class Main {
         }
     }
 }
+
+------------------
+// 2nd Method
+------------------
+
+class Main {
+    public static void main (String[] args)throws IOException {
+                      // Your code here
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int n = Integer.parseInt(br.readLine());
+        String[] str = br.readLine().split(" ");
+        int[] arr = new int[n+1];
+        arr[0] = -1;
+        for(int i = 1; i <= n; i++)
+        {
+            arr[i] = Integer.parseInt(str[i - 1]);
+        }
+        Map<Integer,ArrayList<Integer>> map = new TreeMap<>();
+        PriorityQueue<Map.Entry<Integer,ArrayList<Integer>>> pq = new PriorityQueue<>((a, b) -> {return b.getKey() - a.getKey(); });
+        for(int i = 1; i <= n; i++)
+        {
+            if(!map.containsKey(arr[i]))
+            {
+                ArrayList<Integer> list = new ArrayList<>();
+                map.put(arr[i],list);
+            }
+            map.get(arr[i]).add(i);
+        }
+        for(Map.Entry<Integer,ArrayList<Integer>> e: map.entrySet())
+        {
+            pq.add(e);
+        }
+        int j = 1;
+        while(!pq.isEmpty())
+        {
+            Map.Entry<Integer,ArrayList<Integer>> e = pq.poll();
+            for(int i = e.getValue().size() - 1;i >= 0; i--)
+            {
+                arr[e.getValue().get(i)] = j++;
+            }
+        }
+        for(int i = 1; i <= n; i++)
+        {
+            System.out.print(arr[i]+" ");
+        }
+    }
+}
+
