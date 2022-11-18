@@ -1,0 +1,59 @@
+<!-- Make a job app form having fields Name*, Email*, Gender* (radio), Laptop Brands(options : [Apple, Asus, HP]), Age*, DOB*, Password* & submit button.
+
+Also, Take input from the users where they can paste the website URL of their portfolio. The input element must have portfolio as id
+
+Instructions: * are required fields,
+Use method attribute value that you should use in this case for the form!
+
+The respective input elements for the mentioned fields should have ids
+#name, #email, #password, #age, #dob
+
+The element for selecting laptop brand should have id #laptop
+
+The radio buttons for gender should have name atrribute as gender.
+
+
+All input elements must also have corresponding labels with for attribute set to id's of element they belong to.
+Example label for input of name will be <label for="name"> Name</label> -->
+
+<form id="myForm" method="post">
+
+    <label for="name">Name</label>
+    <input type="text" id="name" required>
+    <br>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" required>
+    <br>
+
+    <label for="genderM">Male</label>
+    <input type="radio" id="genderM" name="gender" required>
+    <label for="genderF">Female</label>
+    <input type="radio" id="genderF" name="gender" required>
+    <br>
+
+    <label for="laptop">Choose your laptop brand</label>
+    <select name="laptop" id="laptop" required>
+        <option>Apple</option>
+        <option>Asus</option>
+        <option>HP</option>
+    </select>
+    <br>
+
+    <label for="age">Age:</label>
+    <input type="number" id='age' min="0" max="150" required>
+    <br>
+
+    <label for="portfolio">Portfolio</label>
+    <input type="url" name="portfolio" id="portfolio">
+    <br>
+
+    <label for="dob">DOB</label>
+    <input type="date" id="dob" required>
+    <br>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" required>
+    <br>
+
+    <button type="submit">Submit</button>
