@@ -1,0 +1,87 @@
+We've all used a size chart while online shopping. Let's recreate one using HTML
+
+Acceptance Criteria
+
+The header row should be in thead and th
+
+The data rows should be wrapped in tbody
+
+Naming of rows and columns should be same as given in image
+
+Appropriate use of tr and td tags
+
+** CSS part for table is optional.
+
+
+<html>
+    <body>
+        <table border>
+            <thead>
+                <th> Part</th>
+                <th>XS</th>
+                <th>S</th>
+                <th>M</th>
+                <th>L</th>
+                <th>XL</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Waist</td>
+                    <td>25</td>
+                    <td>28</td>
+                    <td>30</td>
+                    <td>31</td>
+                    <td>32</td>
+                </tr>
+                <tr>
+                    <td>Chest</td>
+                    <td>34</td>
+                    <td>34</td>
+                    <td>38</td>
+                    <td>40</td>
+                    <td>41</td>
+                </tr>
+                <tr>
+                    <td>Sleeve</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>25</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+
+
+<!-- css part -->
+
+table,tr,td,th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding:2px 80px 0px 0px;
+    text-align: left;
+}
+th{
+    color: white;
+    background-color: rgb(20, 81, 125);
+}
+tr:nth-of-type(1){
+    color: rgb(0, 0, 0);
+    background-color: rgb(230, 99, 99)
+}
+tr:nth-of-type(2){
+    background-color: rgb(106, 131, 156);
+}
+tr:nth-of-type(3){
+    background-color: rgba(230, 99, 99, 0.908);
+}
+
+
+<!--  output
+  Part	XS	S	  M	  L	  XL
+  Waist	25	28	30	31	32
+  Chest	34	34	38	40	41
+ Sleeve 23  24	24	25	25 -->
