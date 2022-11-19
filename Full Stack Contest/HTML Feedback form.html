@@ -1,0 +1,45 @@
+<!-- Create a form with heading "Feedback Form". with the following elements, use the appropriate type required.
+
+Element for getting the name with the id "name," which must have at least 3 characters and a maximum of 50 characters to be valid.
+
+The element with the id "portfolio" is used to take the user's webpage.
+
+In order for the form to be submitted, the Name and Portfolio entries must have the relevant attribute.
+
+The element with the id "favColor" allows the user to select their favourite colour.
+
+A slider element with an id="likeness" that has a minimum value of one and a maximum value of 100 for determining how much they like their colour.
+
+All input elements must have labels with the for property set to the ids of the elements to which they belong.
+
+example label for input of name will be  -->
+
+
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <form method="POST">
+        <h1>Feedback Form</h1>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" minlength="3" maxlength="50" required>
+        </div>
+        <br>
+        <div>
+            <label for="portfolio">Portfolio</label>
+            <input type="url" id="portfolio" name="portfolio" placeholder="Enter your portfolio url" required>
+        </div>
+        <br>
+        <div>
+            <label for="favColor">Select your Favourite color</label>
+            <input type="color" id="favColor" name="favColor" required>
+        </div>
+        <br>
+        <div>
+            <label for="likeness">Rate your colour out of 100</label>
+            <input type="range" id="likeness" name="likeness" min="1" max="100" step="5" required>
+        </div>
+        </form>
+    </body>
+</html>
