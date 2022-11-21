@@ -1,0 +1,11 @@
+.moviePic{
+    height: 250px;
+    width: auto;
+}
+
+.movieDetail{
+    position: absolute;
+    width: 20px;
+    text-align: center; 
+    font-size: 15px;
+}
