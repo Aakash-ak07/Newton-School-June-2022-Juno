@@ -1,0 +1,25 @@
+/* Make a Submit button with "black" background & "white" as font color & "5px" border radius which on hover changes to "yellow" as background & "black" as font color with "30px" as border radius.
+Assign "btn" as id to the button.
+Do not use any other tag inside the button tag, just use the plain text.
+Note: It shouldn’t have any border (hint: none at all) but just border radius.*/
+
+/* html part */
+<html>
+    <body>
+        <button type="submit" id="btn">Submit</button>
+    </body>
+</html>
+
+/* css part */
+#btn{
+    background: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+#btn:hover{
+    background: yellow;
+    color: black;
+    border-radius: 30px;
+    border: none;
+}
