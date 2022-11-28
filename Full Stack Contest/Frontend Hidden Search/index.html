@@ -1,0 +1,40 @@
+<!-- You have to implement a simple search button which expands and displays the input search bar on clicking, as shown in the image below.
+In the project boilerplate, you are given a div with an id searchbar.
+
+When not clicked, the searchbar should have width of 100px. It should have a input tag of width 0px and search button of 100px.
+
+On clicking the button, the searchbar should widen to 400px. The input tag should have width 300px, and search button's width should stay the same at 100px.
+
+Also, make sure that input element gets focused when button is clicked.
+
+Note: Inside the searchbar div, the input tag should have an id "search-input" and the button should have the id "search-btn". -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hidden Search</title>
+  </head>
+  <body>
+    <div class="search" id="searchbar">
+      <input
+        type="text"
+        class="input"
+        id="search-input"
+        placeholder="Search..."
+      />
+      <button class="btn" id="search-btn">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
