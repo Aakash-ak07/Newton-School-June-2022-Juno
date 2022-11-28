@@ -1,18 +1,17 @@
-// You have HTML markup defined, implement the CSS.
+/* // You have HTML markup defined, implement the CSS.
 // Using flexbox properties on the element. holder,
 // make item-1 position itself in the center of the screen
+// Do not change the HTML markup, only change the CSS code of holder */
 
+/* // html part */
 
-// Do not change the HTML markup, only change the CSS code of holder
-
-// html part
 <div class="holder">
         <div class="item item-1">
             Place me in center using flex
         </div>
     </div>
     
-// css part
+/* // css part */
   
   .holder{
     width: 100vw;
