@@ -1,0 +1,58 @@
+/* We will be adding styles to the blog page that we are initially given. The final project is shown in the video given below.
+
+In this question we are going to add some styles to the body and the
+navbar. The result of this task is shown in the image below.
+
+Add the following styles :
+
+
+Add the background color "rgb(230, 230, 230)" to the body
+
+Add the following styles to the ul tag
+
+Remove the bullet points from all the "li's"
+
+set the margin and padding to "0px"
+
+Set the background color as "rgb(1, 14, 128)"
+
+Set the display to "flex" and flex-direction to "row"
+
+After following the above instructions the page should look like this (please increase the width of editor to see the image properly). */
+
+
+
+footer {
+  position: relative;
+  width: 100%;
+  bottom: -100px;
+  background-color: #010e80;
+}
+
+footer p {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+  
+footer a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+}
+
+body{
+  background-color: rgb(230, 230, 230);
+}
+nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(1, 14, 128);
+  display: flex;
+  flex-direction: row;
+}
