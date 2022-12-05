@@ -1,0 +1,83 @@
+<!-- Make a Car insurance registration form to take
+1. Name *
+2. Email*
+3. Gender *
+4. Car Brand*
+5. Car Age*
+6. Date of Purchase *
+7. Password *
+8. submit button
+
+Kindly follow all the instructions mentioned below so that your code passes all the test cases
+
+
+
+Create a form with id="my-form" and method="post"
+
+"Name" should be an input with type="text" and id="name" and required attribute
+
+"Name" should have a label with text="Name"
+
+"Email" should be an input with type="email" and id="email" and required attribute
+
+"Email" should have a label with text="Email"
+
+Create an input of type="radio" id="gender_m" name="gender" and required attribute
+
+Create the label for the above input with text="M"
+
+Create an input of type="radio" id="gender_f" name="gender" and required attribute
+
+Create the label for the above input with text="F"
+
+Create a select option with name="cars" and id="cars" and required attribute
+
+The select should have three options "BMW","Audi","Mercedes"
+
+Create a label for the select option with text="Choose your car"
+
+Create an input with type="number" id="carage" and required attribute
+
+Create a label for for the above text input with text="Car Age:"
+
+Create an input with type="date" id="dop" and required attribute>
+
+Create a label for the above input with text="Date of purchase"
+
+Create an input with type="password" id="password" and required attribute
+
+Create a label for the password input with text="Password"
+
+Create a button of type="submit" and text="Submit" -->
+
+
+<form action="#" method="post" id="my-form">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required><br>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="gender">Gender :</label>
+    <input type="radio" id="gender_m" name="gender" required>
+    <label for="gender">M</label>
+    <input type="radio" id="gender_f" name="gender" required>
+    <label for="gender">F</label><br>
+
+    <label for="cars">Cars Brands :</label>
+    <select id="cars" name="cars" required>
+        <option value="BMW">BMW</option>
+        <option value="Audi">Audi</option>
+        <option value="Mercedes">Mercedes</option>
+    </select><br>
+
+    <label for="carage">Car Age:</label>
+    <input type="number" id="carage" name="carage" required><br>
+
+    <label for="dop">Date of Purchase:</label>
+    <input type="date" id="dop" name="dop" required><br>
+
+    <label for="password">Password:</label>
+    <input type=  "password" id="password" name="password" required><br>
+    
+    <button type="submit"  value="Submit">Submit</button>
+</form>
