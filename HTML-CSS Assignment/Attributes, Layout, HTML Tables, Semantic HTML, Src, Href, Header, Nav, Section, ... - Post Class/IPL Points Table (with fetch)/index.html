@@ -1,0 +1,42 @@
+<!-- Your task is to create a table for displaying the points of IPL Season 2022.
+The data is provided in this API endpoint: "https://my-json-server.typicode.com/FreSauce/json-ipl/data".
+
+Use a script to fetch the data from the given API endpoint. Sort the data fetched in the ascending order based on the NRR value of each team. Display the sorted data in the table.
+
+The table should have 8 columns and 11 rows (10 + 1 including the header row).
+Use the "thead" and "tbody" to distinguish between the header rows and body rows. And use "th" for header cells.
+The table should also have some CSS formatting.
+The header cells should have background color of "#00008b" and text color of "#ffffff".
+Inside the table body, the first column cells should have background color of "#f2f2f2".
+Inside the table body, the last column cells should have background color of "#d1d1d1".
+Inside the table body, all the cells ("td") should have "solid" border of width "1px" and color "#dddddd" -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>IPL SEASON 2022</title>
+  </head>
+  <body>
+    <h1 class="title">IPL Season 2022 Points</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Team</th>
+          <th>Matches</th>
+          <th>Won</th>
+          <th>Lost</th>
+          <th>Tied</th>
+          <th>NRR</th>
+          <th>Points</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
