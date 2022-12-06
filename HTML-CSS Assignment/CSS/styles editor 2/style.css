@@ -1,0 +1,27 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css');
+
+.container {
+  height: 100vh;
+}
+.outer {
+  position: relative;
+  border: 2px solid rgb(0, 0, 0);
+  background: rgb(220, 20, 60);
+  min-height: 300px;
+  margin-top: 50px !important;
+  margin: auto;
+}
+h1 {
+  text-align: center;
+}
+.main {
+  position: absolute;
+  min-height: 50px;
+  width: 150px;
+  background: rgb(0, 255, 255);
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.form {
+  margin-top: 50px;
+}
