@@ -1,0 +1,27 @@
+<!-- A form with a submit button, a input for left with the id="left", a input for top with the id="top", and an html element with the id="main" are provided to you.
+When the submit button is clicked, use JS to change the absolute position of main relative to element with id="outer" from top- left corner using the values of the inputs with id = "top"& id="left" respectively. -->
+
+<div class="row container">
+  <h1>Styles Editor</h1>
+  <div class="col md-6 container">
+    <div class="outer" id="outer">
+      <div id="main" class="main">
+        <h3>Inner Element</h3>
+      </div>
+    </div>
+  </div>
+  <div class="col md-6">
+    <div class="form">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Left</label>
+        <input type="number" class="form-control" id="left" placeholder="Enter left in 'px'" />
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Top</label>
+        <input type="number" class="form-control" id="top" placeholder="Enter top in 'px'" />
+      </div>
+      <button onclick="apply()" type="button"  class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</div>
+<p id="demo"></p>
