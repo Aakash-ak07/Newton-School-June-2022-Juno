@@ -1,0 +1,48 @@
+<!-- Asian Paints wants the users to be able to preview and compare how different colours will look on their walls. They also decided that limiting it to 9 walls is the best bet to not confuse the users and still give them ample colours and shades to compare.
+
+You are a developer at Asian Paints and have decided to build a feature for this.
+
+You designed the feature in such a way that users will be able to see 9 walls on their screen. There will be 2 input boxes and 2 buttons.
+
+Each wall will have an id associated with it. The first input box will take the id of the wall. The second input box will take the colour from the users. The Apply button will apply the colour to the wall. The Reset button will reset the colour of the walls to transparent
+
+Acceptance Criteria:
+Create 9 walls, 2 input fields, and 2 buttons.
+
+Each block should have a unique id corresponding to it in 1-9 and the same value. For example, the first wall will have <div id="1" value="1"></div>
+
+The first input box that accepts the id of the wall should have id="wall_id"
+
+The first input box that accepts the colour of the wall should have id="wall_color"
+
+The Apply button should have id="apply"
+
+The Reset button should have id="reset"
+
+If Apply button is pressed, take the colour from the input#wall_color and the wall from the input #wall_id and set the colour as the background-color of the wall wall. The background-color for all other walls should turn transparent.
+
+If Reset button is pressed, the background-color for all the blocks should turn transparent
+ -->
+
+<!-- html code goes here -->
+<main>
+    <div class="wall-container">
+        <div id="1" value="1">Wall 1</div>
+        <div id="2" value="2">Wall 2</div>
+        <div id="3" value="3">Wall 3</div>
+        <div id="4" value="4">Wall 4</div>
+        <div id="5" value="5">Wall 5</div>
+        <div id="6" value="6">Wall 6</div>
+        <div id="7" value="7">Wall 7</div>
+        <div id="8" value="8">Wall 8</div>
+        <div id="9" value="9">Wall 9</div>
+    </div>
+
+    <label for="wall_id">wall number</label>
+     <input type="number" id="wall_id" required>
+    <label for="wall_color">Enter color</label>
+    <input type="color" id="wall_color" required>
+    <br><br>
+    <button id="apply" onclick="apply()">Apply</button>
+    <button id="reset" onclick="reset()">Reset</button>
+</main>
