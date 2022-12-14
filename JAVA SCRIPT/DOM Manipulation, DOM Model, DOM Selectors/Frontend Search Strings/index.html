@@ -1,0 +1,247 @@
+<!-- Given a article picked from internet, Implement the following.
+Make search implementation on whole page
+When a string is typed in input (id: #search-bar) and the button(id: '#search-button') is clicked, all the strings present in the page should be marked with tag so that they will be highlighted.
+If you search another string and hit the button previous mark tags should be removed.
+question -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Strings</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <!-- This is done by TV. -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="main">
+        <h1 class='header'>Search Strings</h1>
+        <div class="content">
+            <div class='search-bar-container'>
+                <label for='search-bar'>Type String you need to search: </label>
+                <input type='text' id='search-bar'></input>
+                <button class='btn btn-primary' id='search-button'>Search</button>
+            </div>
+            <div class="content-container">
+                <div class="content-headers">
+                    <h1>Where will the next pandemic come from?</h1>
+                    <h4>And how can we stop it?</h4>
+                </div>
+                <div class="img-container">
+                    <div class="img-box">
+                        <img src="https://www.popsci.com/uploads/2019/03/18/VLXCPDCHZXBBG5T5H76K4BZRYI.jpg" alt="rabbit"
+                            class="main-img"></img>
+                        <p>
+                            Lyles flying fox (Pteropus lylei) upside down with mouth open. Gary
+                            Ombler
+                        </p>
+                    </div>
+                </div>
+                <div class="para-content">
+                    <i>This article is adapted from David Quammen’s new book, Spillover.</i>
+                    <p class="first-para">
+                        <b>In June 2008, a Dutch woman </b>
+                        <span>
+                            named Astrid Joosten left the Netherlands with her husband for an
+                            adventure vacation in Uganda. It wasn’t their first trip to Africa,
+                            but it would be more consequential than the others.
+                        </span>
+                    </p>
+                    <p id="test-para">
+                        At home in Noord-Brabant, Joosten, 41, worked as a business analyst
+                        for an electrical company. Both she and her spouse, a financial
+                        manager, enjoyed escaping Europe on annual getaways. In 2002, they had
+                        flown to Johannesburg and, stepping off the airplane, felt love for
+                        Africa at first sight. On later trips they visited Mozambique, Zambia,
+                        and Mali. The journey to Uganda in 2008, booked through an
+                        adventure-travel outfitter, would allow them to see mountain gorillas
+                        in the southwestern highlands of the country as well as some other
+                        wildlife and cultures. They worked their way south toward Bwindi
+                        Impenetrable Forest, where the gorillas reside. On one day, the
+                        operators offered a side trip, an option, to a place called the
+                        Maramagambo Forest, where the chief attraction was a site known as
+                        Python Cave. African rock pythons lived there, languid and content,
+                        grown large on a diet of bats.
+                    </p>
+                    <p>
+                        Joosten’s husband, later her widower, is a fair-skinned man named Jaap
+                        Taal, a calm fellow with a shaved head and dark, roundish glasses.
+                        Most of the other travelers didn’t fancy this Python Cave offering, he
+                        told me later. “But Astrid and I always said, ‘Maybe you come here
+                        only once in your life, and you have to do everything you can.’ ” They
+                        rode to Maramagambo Forest and then walked a mile or so, gradually
+                        ascending, to a small pond. Nearby, half-concealed by moss and other
+                        greenery, like a crocodile’s eye barely surfaced, was a low, dark
+                        opening. Joosten and Taal, with their guide and one other client,
+                        climbed down into the cave.
+                    </p>
+                    <p>
+                        The footing was bad: rocky, uneven, and slick. The smell was bad too:
+                        fruity and sour. Think of a dreary barroom, closed and empty, with
+                        beer on the floor at three a.m. The cave seemed to have been carved by
+                        a creek, or at least to have channeled its waters, and part of the
+                        overhead rock had collapsed, leaving a floor of boulders and coarse
+                        rubble, a moonscape, coated with guano like a heavy layer of vanilla
+                        icing. It served as a major roosting site for the Egyptian fruit bat
+                        (Rousettus aegyptiacus), a crow-size chiropteran that’s widespread and
+                        relatively abundant in Africa and the Middle East. The cave’s ceiling
+                        was thick with them—many thousands, agitated and chittering at the
+                        presence of human intruders, shifting position, some dropping free to
+                        fly and then settling again. Joosten and Taal kept their heads low and
+                        watched their step, trying not to slip, ready to put a hand down if
+                        needed. “I think that’s how Astrid got infected,” Taal told me. “I
+                        think she put her hand on a piece of rock, which contained droppings
+                        of a bat, which are infected. And so she had it on her hand.” Maybe
+                        she touched her face an hour later, or put a piece of candy in her
+                        mouth, “and that’s how I think the infection got in her.”
+                    </p>
+                    <p>
+                        No one had warned Joosten and Taal about the potential hazards of an
+                        African bat cave. They knew nothing of a virus called Marburg (though
+                        they had heard of Ebola). They only stayed in the cave about 10
+                        minutes. They saw a python, large and torpid. Then they left,
+                        continued their Uganda vacation, visited the mountain gorillas, took a
+                        boat trip, and flew back to Amsterdam. Thirteen days after the cave
+                        visit, home in Noord-Brabant, Joosten fell sick.
+                    </p>
+                    <p>
+                        No one had warned Joosten and Taal about the potential hazards of an
+                        African bat cave.At first it seemed no worse than the flu. Then her
+                        temperature climbed higher and higher. After a few days, she began
+                        suffering organ failure. Her doctors, knowing of her recent time in
+                        Africa, suspected Lassa virus or maybe Marburg. “Marburg,” said Taal,
+                        “what’s that?” Joosten’s brother looked it up on Wikipedia and told
+                        him: “Marburg virus: It kills, could be big trouble.” In fact, it’s a
+                        filovirus, the closest relative to the ebolaviruses (of which there
+                        are five species, including the most infamous, Ebola). Marburg was
+                        first discovered in 1967, when a group of African monkeys, imported to
+                        Marburg an der Lahn, in western Germany, for medical research uses,
+                        passed a nasty new virus to laboratory workers. Five people died. In
+                        the decades since, it has also struck hundreds of Africans, with a
+                        case fatality rate of up to 90 percent.
+                    </p>
+                    <p>
+                        <b> A horse dies mysteriously in Australia </b>,
+                        <span>
+                            and people around it fall sick. A chimpanzee carcass in Central
+                            Africa passes Ebola to the villagers who scavenge and eat it. A palm
+                            civet, served at a Wild Flavors restaurant in southern China,
+                            infects one diner with a new ailment, which spreads to Hong Kong,
+                            Toronto, Hanoi, and Singapore, eventually to be known as SARS. These
+                            cases and others, equally spooky, represent not isolated events but
+                            a pattern, a trend: the emergence of new human diseases from
+                            wildlife.
+                        </span>
+                    </p>
+                    <p>
+                        The experts call such diseases zoonoses, meaning animal infections
+                        that spill into people. About 60 percent of human infectious diseases
+                        are zoonoses. For the most part, they result from infection by one of
+                        six types of pathogen: viruses, bacteria, fungi, protists, prions, and
+                        worms. The most troublesome are viruses. They are abundant, adaptable,
+                        not subject to antibiotics, and only sometimes deterred by antiviral
+                        drugs. Within the viral category is one particularly worrisome
+                        subgroup, RNA viruses. AIDS is caused by a zoonotic RNA virus. So was
+                        the 1918 influenza, which killed 50 million people. Ebola is an RNA
+                        virus, which emerged in Uganda this summer after four years of
+                        relative quiescence. Marburg, Lassa, West Nile, Nipah, dengue, rabies,
+                        yellow fever virus, and the SARS bug are too.
+                    </p>
+                    <p>
+                        Over the last half dozen years, I have asked eminent disease
+                        scientists and public-health officials, including some of the world’s
+                        experts on Ebola, on SARS, on bat-borne viruses, on HIV-1 and HIV-2,
+                        and on viral evolution, the same two-part question: 1) Will a new
+                        disease emerge, in the near future, sufficiently virulent and
+                        transmissible to cause a pandemic capable of killing tens of millions
+                        of people? and 2) If so, what does it look like and from where does it
+                        come? Their answers to the first part have ranged from maybe to
+                        probably. Their answers to the second have focused on zoonoses,
+                        particularly RNA viruses. The prospect of a new viral pandemic, for
+                        these sober professionals, looms large. They talk about it; they think
+                        about it; they make contingency plans against it: the Next Big One.
+                        They say it might happen anytime.
+                    </p>
+                    <p>
+                        To understand what killed Astrid Joosten, and to see her case within
+                        the context of the Next Big One, you need to understand how viruses
+                        evolve. Edward C. Holmes is one of the world’s leading experts in
+                        viral evolution. He sits in a bare office at the Center for Infectious
+                        Disease Dynamics, which is part of Pennsylvania State University, and
+                        discerns patterns of viral change by scrutinizing sequences of genetic
+                        code. That is, he looks at long runs of the five letters (A, C, T, G,
+                        and U) that represent nucleotide bases in a DNA or RNA molecule,
+                        strung out in unpronounceable streaks as though typed by a manic
+                        chimpanzee. Holmes’s office is tidy and comfortable, furnished with a
+                        desk, a table, and several chairs. There are few bookshelves, few
+                        books, few files or papers. A thinker’s room. On the desk is a
+                        computer with a large monitor. That’s how it all looked when I
+                        visited, anyway.
+                    </p>
+                    <p>
+                        Above the computer was a poster celebrating “the Virosphere,” meaning
+                        the totality of viral diversity on Earth. Beside that was another
+                        poster, showing Homer Simpson as a character in Edward Hopper’s famous
+                        painting “Nighthawks.” Homer is seated at the diner counter with a
+                        plate of doughnuts before him.
+                    </p>
+                    <p>
+                        Holmes is an Englishman, transplanted to central Pennsylvania from
+                        London and Cambridge. His eyes bug out slightly when he discusses a
+                        crucial fact or an edgy idea, because good facts and ideas impassion
+                        him. His head is round and, where not already bald, shaved austerely.
+                        He wears wiry glasses with a thick metal brow, and while he looks a
+                        bit severe, Holmes is anything but. He’s lively and humorous, a
+                        generous soul who loves conversation about what matters: viruses.
+                        Everyone calls him Eddie.
+                    </p>
+                    <p>
+                        During the early 20th century, disease scientists from the Rockefeller
+                        Foundation and other institutions conceived the ambitious goal of
+                        eradicating some infectious diseases entirely. They tried hard with
+                        yellow fever, spending millions of dollars and many years of effort,
+                        and failed. They tried with malaria and failed. They tried later with
+                        smallpox and succeeded. Why? The differences among those three
+                        diseases are many and complex, but probably the most crucial one is
+                        that smallpox resided neither in a reservoir host nor in a vector,
+                        such as a mosquito or tick. Its ecology was simple. It existed in
+                        humans—in humans only—and was therefore much easier to eradicate. The
+                        campaign to eradicate polio, begun in 1998 by WHO and other
+                        institutions, is a realistic effort for the same reason: Polio isn’t
+                        zoonotic. Eradicating a zoonotic disease, whether a directly
+                        transmitted one like Ebola or an insect-vectored one such as yellow
+                        fever, is much more complicated. Do you exterminate the pathogen by
+                        exterminating the species of bat or primate or mosquito in which it
+                        resides? Not easily, you don’t, and not without raising an outcry. The
+                        notion of eradicating chimpanzees as a step toward preventing the
+                        future spillover of another HIV would provoke a deep and bitter
+                        discussion, to put it mildly.
+                    </p>
+                    <p>
+                        That’s the salubrious thing about zoonotic diseases: They remind us,
+                        as St. Francis did, that we humans are inseparable from the natural
+                        world. In fact, there is no “natural world,” it’s a bad and artificial
+                        phrase. There is only the world. Humankind is part of that world, as
+                        are the ebolaviruses, as are the influenzas and the HIVs, as are
+                        Marburg and Nipah and SARS, as are chimpanzees and palm civets and
+                        Egyptian fruit bats, as is the next murderous virus—the one we haven’t
+                        yet detected. And while humans don’t evolve nearly as fast and as
+                        variously as an RNA virus does, we may—let me repeat that word, may—be
+                        able to keep such threats at bay, fighting them off, forestalling the
+                        more cataclysmic of the dire scenarios they present, for one reason:
+                        At our best, we’re smarter than they are.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
