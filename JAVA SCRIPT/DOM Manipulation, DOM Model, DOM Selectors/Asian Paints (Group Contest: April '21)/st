@@ -1,0 +1,15 @@
+/* css code goes here */
+*{
+    box-sizing: border-box;
+}
+.wall-container{
+    display: grid;
+    grid-template-columns:51px 51px 51px;
+}
+ .wall-container div{
+    height:50px;
+    width: 50px;
+    border: 1px solid black;
+    /* background-color: transparent; */
+    margin: 1px;
+}
