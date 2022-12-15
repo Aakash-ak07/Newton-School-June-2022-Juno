@@ -1,0 +1,38 @@
+<!-- Implement the given js Functions
+Take input numbers in form of string by separating numbers with ,. If there is an invalid number throw and error in id #error. Display the input in #display after clicking the button #add
+Implement js filter by writing code for even numbers and odd numbers separately and display them in #display after clicking buttons #even #odd respectively
+Implement Join method without any space between elements and display in #display after clicking #join button
+
+Note: Use JSON.stringify for displaying arrays and display strings normally
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Methods</title>
+    <style>
+        .d-none{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h3>JS Array Properties</h3>
+    <div>
+        <label for="input">Array</label>
+        <input type="text" id="input">
+        <button id="add">Add</button>
+    </div>
+    <div style="margin: 10px 0;">
+        <button id="join">Join</button>
+        <button id="even">Filter Even</button>
+        <button id="odd">Filter Odd</button>
+    </div>
+    <p id="display"></p>
+    <p id="error">Wrong Input!!</p>
+    <script src="./script.js"></script>
+</body>
+</html>
