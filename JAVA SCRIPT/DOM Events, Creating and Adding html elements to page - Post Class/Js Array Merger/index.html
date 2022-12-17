@@ -1,0 +1,34 @@
+<!-- Given a template for adding elements to two different arrays.
+
+Add Elements to both arrays by entering numbers separated by comas and if there is a invalid number display some message at id: #error
+
+Use JavaScript spread... operator to perform this assignment
+
+On Clicking buttons with ids #add-1 #add-2 #merge respective arrays should be displayed correctly in #disp-1 #disp-2 #result in the order they were entered
+
+The relative order should not change
+
+ -->
+
+<style>
+    .d-none {
+        display: none;
+    }
+</style>
+<h3>Merge arrays using spread operator</h3>
+<p>Give input numbers in text field separated by comas</p>
+<div>
+    <label for="1">Array 1</label>
+    <input type="text" id="1">
+    <button id="add-1">Add to array 1</button>
+    <p id="disp-1"></p>
+</div>
+<div>
+    <label for="2">Array 2</label>
+    <input type="text" id="2">
+    <button id="add-2">Add to array 2</button>
+    <p id="disp-2"></p>
+</div>
+<button id="merge">Merge both</button>
+<p id="result"></p>
+<p class="d-none" id="error">Wrong Input!</p>
