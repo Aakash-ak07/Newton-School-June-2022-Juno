@@ -1,0 +1,31 @@
+<!-- In this project , we will be making a app which creates div.
+All the html markup is already given for you.
+
+
+#div-id-input will be the id of the div we will create
+#div-content-input will be the content inside the div
+#div-height-input will be the height of the div in pixels
+#div-width-input will be the width of the div in pixels
+
+
+When user clicks #create-div-btn,
+create a div with the above supplied parameters and append it inside #div-holder.
+Also whenever you make a div , it will also have a class="my-div" -->
+
+<form onsubmit="">
+        <label>Enter Div id</label>
+        <input id="div-id-input" type="text">
+        <br />
+        <label>Enter div text content</label>
+        <input id="div-content-input" type="text">
+        <br />
+        <label>Enter div height in px</label>
+        <input id="div-height-input" type="number" value="50">
+        <br />
+        <label>Enter div width in px</label>
+        <input id="div-width-input" type="number" value="50">
+        <br />
+        <button id="create-div-btn" onclick="return createDivAndAppend()">Add Div</button>
+    </form>
+<br>
+    <main id="div-holder"></main>
