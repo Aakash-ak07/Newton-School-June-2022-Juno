@@ -1,0 +1,38 @@
+<!-- Using HTML/CSS and JS, create a Bollywood word- guessing game.
+HTML will have have div with class = "word" having 5 children with class = "letter" and a section to show number of remaining guesses with class = "chances" and h3 with id = "answer" .
+
+The player must guess a five- letter word one letter at a time in this game.
+Each player can have maximum 5 incorrect guesses.
+Input will be taken directly by the keyboard using "keydown()" event listener.
+If the input is same as the character required then the value is added in current letter.
+On each wrong guess player will get an alert "Wrong guess! XX guesses remaining.", and update number of guesses remaining.
+On successfully guessing the whole word player will get the alert "Congratulations!"
+If player run out guesses, then get alert "You've run out of guesses! Game over!" and show the answer as "Answer is XXXXX". -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  </head>
+  <body class="container" onkeydown="check(event)">
+    <h1>Bollywood</h1>
+    <div class="main">
+      <div class="chances" id="chance">Chances Left : 5</div>
+      <h3>Guess the word in 5 chances</h3>
+      <div class="word">
+        <div class="letter"></div>
+        <div class="letter"></div>
+        <div class="letter"></div>
+        <div class="letter"></div>
+        <div class="letter"></div>
+      </div>
+      <h3 id="answer"></h3>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
