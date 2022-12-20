@@ -1,0 +1,31 @@
+body,
+h1,
+h3 {
+  text-align: center;
+}
+
+.letter {
+  border: 1px solid;
+  height: 60px;
+  width: 60px;
+  padding: 5px;
+  text-align: center;
+  font-size: 30px;
+  margin: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-transform: uppercase;
+}
+
+.word {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.filled-box {
+  border: 2px solid black;
+}
