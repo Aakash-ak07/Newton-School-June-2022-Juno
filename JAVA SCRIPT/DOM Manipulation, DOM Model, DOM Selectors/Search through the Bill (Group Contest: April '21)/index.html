@@ -1,0 +1,47 @@
+<!-- You are provided with a list of items for your Grocery List. You want to display the list and add a feature filter to it.
+
+Acceptance Criteria:
+
+Render the Grocery List in a table.
+
+Each item should have a table row corresponding to it.
+
+The table should also have a header.
+
+There should be an input box for search with id="search-bar"
+
+When some string is typed in the search bar, the table should get updated only to show the matching items
+
+Search should be case insensitive
+
+When no items are matched, render text No items found! inside the table directly. Remove all the data rows and table header in this case
+
+When the search box is cleared, all the original items of the list should come back
+
+Do not update the original list as test cases depend on it
+
+An item is matched with a search string if the search string is a substring of that item. For example: If the search string is m, the matching items are Tomatoes, Pomegranate, Mango. If the search string is ma, the matching items are Tomatoes, Mango. Note how the search string is case insensitive. -->
+
+
+
+<!-- htmp part -->
+
+
+<h1>Grocery Bill</h1>
+
+<input placeholder="search"  id="search-bar" onchange="update()" />
+<table>
+</table>
+
+
+<!--  css part  -->
+
+td, th, tr{
+    padding: 5px;
+    border: 1px solid black;
+    margin-top: 15px;
+}
+
+tr:nth-child(1){
+    background-color: rgba(128, 128, 127, 0.589);;
+}
