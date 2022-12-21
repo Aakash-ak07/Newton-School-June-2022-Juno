@@ -1,0 +1,58 @@
+<!-- Create a basic calculator using HTML, CSS and JAVASCRIPT which perform simple +, - , /, * operations. Make it clean and pretty
+
+Acceptance Criteria:
+
+Create number buttons with id "block0" to "block9".
+
+Create buttons for operations with ids "plus", "minus", "multiply", "divide" for the respective operation.
+and make one clear button.
+
+Create button for decimal operations with id "dot" for respective operation.
+
+There should be a button that, on click, displays the answer. This button should have id="ans"
+
+There should be a reset button that, on click, clears the answer. This button should have id="clr"
+
+On division by 0, the answer should be 'Infinity'
+
+On division of 0/0 it should give 'NaN'
+
+The element where input/output is displayed should be of input type and have id="input". The value should get updated with every calculationa -->
+
+<table class="calculator">
+        <tr>
+            <td colspan="4"> <input class="display-box" type="text" id="input" disabled /> </td>
+        </tr>
+        <tr>
+            <!-- clearScreen()  -->
+            <td colspan="2"> <input type="button" value="C" onclick="clearScreen()" id="clr" /> </td>
+            <td colspan="2"> <input type="button" value="CLR" onclick="remove()" id="remove" /> </td>
+        </tr>
+        <tr>
+            <!-- display()  -->
+            <td> <input id="block1" type="button" value="1" onclick="display('1')" /> </td>
+            <td> <input id="block2" type="button" value="2" onclick="display('2')" /> </td>
+            <td> <input id="block3" type="button" value="3" onclick="display('3')" /> </td>
+            <td> <input id="divide" type="button" value="/" onclick="display('/')" /> </td>
+        </tr>
+        <tr>
+            <td> <input id="block4" type="button" value="4" onclick="display('4')" /> </td>
+            <td> <input id="block5" type="button" value="5" onclick="display('5')" /> </td>
+            <td> <input id="block6" type="button" value="6" onclick="display('6')" /> </td>
+            <td> <input id="minus" type="button" value="-" onclick="display('-')" /> </td>
+        </tr>
+        <tr>
+            <td> <input id="block7" type="button" value="7" onclick="display('7')" /> </td>
+            <td> <input id="block8" type="button" value="8" onclick="display('8')" /> </td>
+            <td> <input id="block9" type="button" value="9" onclick="display('9')" /> </td>
+            <td> <input id="plus" type="button" value="+" onclick="display('+')" /> </td>
+        </tr>
+        <tr>
+            <td> <input id="dot" type="button" value="." onclick="display('.')" /> </td>
+            <td> <input id="block0" type="button" value="0" onclick="display('0')" /> </td>
+
+            <!-- mathematical expression -->
+            <td> <input type="button" value="=" onclick="calculate()" id="ans" /> </td>
+            <td> <input id="multiply" type="button" value="*" onclick="display('*')" /> </td>
+        </tr>
+    </table>
