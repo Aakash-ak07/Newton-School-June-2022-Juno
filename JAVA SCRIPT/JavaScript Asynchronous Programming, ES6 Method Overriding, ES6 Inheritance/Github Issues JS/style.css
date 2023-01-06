@@ -1,0 +1,37 @@
+/* css code goes here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    place-content: center;
+    background-color: rgb(159, 179, 239);
+}
+.container{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#heading{
+    text-align: center;
+    text-transform: uppercase;
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+}
+.btn button{
+    background-color: rgb(64, 64, 66);
+    padding: .5rem 1rem;
+    font-size: 1.3rem;
+    border-radius: .4rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+}
