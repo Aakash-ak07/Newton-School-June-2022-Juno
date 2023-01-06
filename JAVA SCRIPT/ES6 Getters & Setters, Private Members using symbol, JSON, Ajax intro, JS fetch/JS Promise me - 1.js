@@ -14,8 +14,19 @@
 // })
 
 
-function promiseMe(args, val) {
-    return new Promise(resolve=>
-        setTimeout(resolve, args, val)
-    )
+function promiseMe(time, data) {
+    return new Promise((resolve, reject)=>{
+        setTimeout(()=>{
+            resolve(data)
+        }, time)
+    })
 }
+
+
+
+//---------2nd solution
+// function promiseMe(args, val) {
+//     return new Promise(resolve=>
+//         setTimeout(resolve, args, val)
+//     )
+// }
