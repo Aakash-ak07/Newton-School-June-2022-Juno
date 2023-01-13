@@ -1,0 +1,32 @@
+body {
+  background-color: #ffb459 !important;
+  background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  height: 100vh;
+}
+.header {
+  font-size: 4rem;
+  text-align: center;
+}
+.name {
+  width: 70%;
+  font-size: 20px;
+}
+.cost {
+  width: 15%;
+  font-size: 20px;
+}
+.action {
+  border-radius: 50% !important;
+  margin-left: 10px;
+}
+.menuitem {
+  display: flex;
+  margin-bottom: 10px;
+  cursor: move;
+  user-select: none;
+}
+.draggable {
+  cursor: move;
+  user-select: none;
+}
