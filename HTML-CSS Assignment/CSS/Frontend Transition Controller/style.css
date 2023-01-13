@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #1a1a1a;
+}
+
+.title {
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.animation-card {
+  height: 800px;
+  margin: 50px;
+  display: flex;
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  align-items: center;
+}
+
+.controls {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  background-color: #141414;
+  padding: 30px;
+  width: 250px;
+}
+
+.controls label {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.animation-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: #e600c5;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.animation-div {
+  background: #e600c5;
+}
+
+#animation-box {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  background: #fff;
+}
