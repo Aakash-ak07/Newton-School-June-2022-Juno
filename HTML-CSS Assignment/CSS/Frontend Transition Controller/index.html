@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation Controller</title>
+  </head>
+  <body>
+    <h1 class="title">Animate the Box</h1>
+    <div class="animation-card">
+      <form class="controls" id="animation-controls">
+        <label id="anim-x-label" htmlFor="anim-x">X: </label>
+        <input
+          onchange="changeHandler(event)"
+          type="range"
+          min="-100"
+          max="100"
+          class="slider"
+          id="anim-x"
+          name="anim-x"
+        />
+        <label id="anim-y-label" htmlFor="anim-y">Y: </label>
+        <input
+          onchange="changeHandler(event)"
+          type="range"
+          min="-100"
+          max="100"
+          class="slider"
+          id="anim-y"
+          name="anim-y"
+        />
+        <label id="anim-scale-label" htmlFor="anim-scale">Scale: </label>
+        <input
+          onchange="changeHandler(event)"
+          type="range"
+          min="0"
+          max="2"
+          step="0.1"
+          class="slider"
+          id="anim-scale"
+          name="anim-scale"
+        />
+        <label id="anim-rotation-label" htmlFor="anim-rotation">Rotate: </label>
+        <input
+          onchange="changeHandler(event)"
+          type="range"
+          min="0"
+          max="360"
+          class="slider"
+          id="anim-rotation"
+        />
+        <label id="anim-duration-label" htmlFor="anim-duration"
+          >Duration:
+        </label>
+        <input
+          onchange="changeHandler(event)"
+          type="range"
+          min="0"
+          max="5"
+          step="1"
+          class="slider"
+          id="anim-duration"
+        />
+      </form>
+      <div class="animation-container">
+        <div class="animation-div" id="animation-box"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
