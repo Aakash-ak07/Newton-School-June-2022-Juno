@@ -1,0 +1,74 @@
+<!-- Let's build the game of Rock, Paper and Scissors! (Learn game here).
+
+This is how you may proceed:
+
+
+Take number of turns in a game from the user ( an input box of type number ).
+
+Start the game when the user clicks the play button.
+
+User can select (Rock, Paper, Scissors ) from clickable DOM object ( such as button, div, image etc )
+
+You have to keep count of User Points, Computer Points, turns left and result of the round. You have to show what computer chooses as text
+
+If there's no round left then show game result
+
+Do Not hide input box and play button
+
+Show the round Result after each round
+
+
+Acceptance Criteria ( attribute = data-ns-test ) :-
+Eg :- data-ns-test="attribute value given below"
+1. Use “game-number” attribute-value for INPUT Tag element (number of turns in the game)
+2. Use “play-game” attribute-value for the play button
+3. Use “rock”, “paper”, “scissors” attribute-values for rock, paper, scissors (clickable DOM objects) respectively.
+4. Use “computer-choose” attribute-value which renders “SCISSORS”, “PAPER” or “ROCK” for computer choice in the game.
+5. Use “round-result” attribute-value to show the result of the particular round which renders “WON”, “TIE” and “LOSE” after each round.
+6. Use “rounds-left”, “user-points”, and “computer-points” attribute-values for rounds left, user points, and computer points respectively which renders the number of round-left, user-points, and computer-points, and Update them after each round.
+7. Use “game-result” attribute-value which will have values “WON”, “TIE” or “LOSE” to show the result of the game.
+8. Create a window.computerChoose property denoting computer choice having value in [0, 1, 2] in each round for ["ROCK", "PAPER", "SCISSORS"] respectively. -->
+
+<!-- html code goes here -->
+<!DOCTYPE html>
+
+<html>
+<body>
+    <h1 class="header">
+        Rock Paper Scissors
+    </h1>
+    <label for="game-number">Number of rounds:-</label>
+    <input type="number" name="game-number" id="game-number" data-ns-test="game-number" />
+    <button id="play-game" data-ns-test="play-game" onclick="playGame()">Play</button>
+    <div class="game-container" id="game-container">
+        <div>
+            <button data-ns-test="rock" id="rock" value="0">rock</button>
+            <button data-ns-test="paper" id="paper" value="1">paper</button>
+            <button data-ns-test="scissors" id="scissors" value="2">scissors</button>
+        </div>
+        <div>
+            <!-- Computer choose :- -->
+            <span data-ns-test="computer-choose" id="computer-choose"></span>
+        </div>
+        <span id="round-result" data-ns-test="round-result">
+            WON
+        </span>
+        <div>
+            <!-- User Points :- -->
+            <span data-ns-test="user-points" id="user-points">0</span>
+            <!-- Computer Points :- -->
+            <span data-ns-test="computer-points" id="computer-points">0</span>
+        </div>
+        <div>
+            <!-- Rounds Left :- -->
+            <span data-ns-test="rounds-left" id="rounds-left">0</span>
+        </div>
+    </div>
+    <div id="game-result" data-ns-test="game-result">
+        WON
+    </div>
+
+    
+</body>
+
+</html> 
