@@ -48,11 +48,10 @@
 // Print the points 2, 1 and 5 as they are closest to origin.
 // Point 2 and 3 have same distance but we choose the point which occur earlier.
 
+
 import java.io.*; // for handling input/output
 import java.util.*; // contains Collections framework
 
-// don't change the name of this class
-// you can add inner classes if needed
 class Pair1 {
     int a;
     int b;
