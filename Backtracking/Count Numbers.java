@@ -6,6 +6,7 @@
 // 0 <= N <= 8
 // Output
 // Print the count of all numbers with unique digits, x
+
 // Example
 // Sample Input 1:
 // 2
